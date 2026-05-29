@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+#typing {
+    color: #ff4f8b;
+    font-size: 50px;
+    margin: 0px;
+    text-shadow: 0 0 10px pink;
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 0 20px;
+}
+
+.subtitle {
+    color: #ff7aa2;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 100%;
+    min-height: 20vh;
+    text-align: center;
+    height: 10vh;
+    top: 50px;
+    position: relative;
+}
+
+.loveBtn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background: #ff5c8a;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 92, 138, 0.7);
+    text-align: center;
+    position: relative;
+    top: 200px;
+    height: 60px;
+}
+
+#loveBtn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background: #ff5c8a;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 92, 138, 0.7);
+    text-align: center;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pertanyaan {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 225px;
+    width: 100%;
+    height: 200px;
+}
+
+.loveBtn:hover {
+    transform: scale(1.1);
+    background: #ff2f6d;
+}
+
+#loveBtn:hover {
+    transform: scale(1.1);
+    background: #ff2f6d;
+}
+
+#tidakBtn {
+    position: relative;
+    transition: 0.15s;
+}
+
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    color: pink;
+    animation: floatUp linear infinite;
+    user-select: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+#heartCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    #typing {
+        font-size: 35px;
+    }
+
+    #loveBtn {
+        font-size: 18px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+audio{
+    display: none;
+}
